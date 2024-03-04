@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.Flashcard {
+  perspective: 1000px;
+  height: 400px;
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  transition: transform 0.2s ease;
+}
+
+.Flashcard:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+.Flashcard:active {
+  transform: scale(0.99);
+}
+
+.AnswerImages {
+  width: 200px;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+  height: 50px;
+  width: 80px;
+  font-size: 30px;
+  background-color: rgb(234, 234, 234);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.JoeCool {
+  width: 330px;
+  position: absolute;
+  transform: translate(112%, 22%);
+}
