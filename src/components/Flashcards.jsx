@@ -5,7 +5,7 @@ import BirthdaySnoopy from "../images/BirthdaySnoopy.png";
 import CharlesSnoopy from "../images/CharlesSnoopy.jpg.webp";
 import CharlieSnoopy from "../images/CharlieSnoopy.png";
 import HouseSnoopy from "../images/HouseSnoopy.png";
-import HugWoodstockSnoopy from "../images/HugWoodstockSnoopy.png";
+import LoveSnoopy from "../images/LoveSnoopy.png";
 import JoeCoolSnoopy from "../images/JoeCoolSnoopy.webp";
 import LilaSnoopy from "../images/LilaSnoopy.webp";
 import PilotSnoopy from "../images/PilotSnoopy.png";
@@ -15,6 +15,7 @@ import WoodstockSnoopy from "../images/WoodstockSnoopy.png";
 
 const Flashcards = ({cardIndex}) => {
     const flashcards = [
+        {question: "--+-- Before you begin taking this quiz --+-- Snoopy has a REALLY important question to ask! How much do you love him? You better be right! Click the card to reveal the correct answer.", answer: "SO MUCH!! ❤️ Isn't he just the BEST dog to exist? Click the card again to bring back the question. Click the '→' to randomly swap the next 10 cards.", image: LoveSnoopy},
         {question: "When is Snoopy's birthday?", answer: "August 10 🎂", image: BirthdaySnoopy},
         {question: "Who is Snoopy's current owner?", answer: "Charlie Brown!", image: CharlieSnoopy},
         {question: "Who is Snoopy's best friend?", answer: "Woodstock ❤️", image: WoodstockSnoopy},

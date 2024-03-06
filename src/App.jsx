@@ -8,9 +8,9 @@ const App = () => {
   const [cardIndex, setCardIndex] = useState(0);
 
   const getRandomCard = () => {
-    let index = -1;
-    while (index === -1 || index === cardIndex) {
-      index = Math.floor(Math.random() * 10)
+    let index = cardIndex;
+    while (index === cardIndex || index === 0) {
+      index = Math.floor(Math.random() * 11)
     }
     setCardIndex(index);
   };
@@ -30,7 +30,7 @@ const App = () => {
         <h2>Think you love Snoopy? Take this quiz to test your knowledge on everything Snoopy!</h2>
       </div>
 
-      <h3>Number of cards: 10</h3>
+      <h3>Number of cards: 10 + Intro</h3>
       <div className='Flashcard'>
         <Flashcards cardIndex={cardIndex}/>
       </div>
