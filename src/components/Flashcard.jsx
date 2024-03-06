@@ -12,7 +12,7 @@ const Flashcard = (props) => {
             {flipped ? (
                 <div>
                     <h4>{props.answer}</h4>
-                    {props.image && <img className="AnswerImages" src={props.image}/>}
+                    <img className="AnswerImages" src={props.image}/>
                 </div>
             ) : (
                 <h4>{props.question}</h4>
