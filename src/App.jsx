@@ -9,17 +9,22 @@ const App = () => {
 
   const getRandomCard = () => {
     let index = cardIndex;
-    while (index === cardIndex || index === 0) {
-      index = Math.floor(Math.random() * 11)
+    while (index === cardIndex) {
+      index = Math.floor(Math.random() * 10)
     }
     setCardIndex(index);
   };
 
+  const getNextCard = () => {
+    let index = (cardIndex + 1) % 10;
+    setCardIndex(index);
+  };
+
   const getPrevCard = () => {
-    if (cardIndex === 0) {
-      return;
+    let index = (cardIndex - 1) % 10;
+    if (index < 0) {
+      index = 9;
     }
-    const index = cardIndex - 1;
     setCardIndex(index);
   };
 
@@ -30,14 +35,14 @@ const App = () => {
         <h2>Think you love Snoopy? Take this quiz to test your knowledge on everything Snoopy!</h2>
       </div>
 
-      <h3>Number of cards: 10 + Intro</h3>
       <div className='Flashcard'>
         <Flashcards cardIndex={cardIndex}/>
       </div>
 
-      <div className='Arrows'>
-        <button onClick={getPrevCard}>←</button>
-        <button onClick={getRandomCard}>→</button>
+      <div className='buttons'>
+        <button className="arrowButton" onClick={getPrevCard}>←</button>
+        <button className='shuffleButton' onClick={getRandomCard}>Shuffle Cards</button>
+        <button className="arrowButton" onClick={getNextCard}>→</button>
       </div>
 
       <img className='JoeCool' src={JoeCool}></img>

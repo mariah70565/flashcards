@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 
 const Flashcard = (props) => {
-    const [flipped, setFlipped] = useState(false);
-
-    const flipCard = () => {
-        setFlipped(!flipped);
-    };
 
     return (
-        <div className="Flashcard" onClick={flipCard}>
-            {flipped ? (
+        <div className="Flashcard" onClick={props.flipCard}>
+            {props.isFlipped ? (
                 <div>
                     <h4>{props.answer}</h4>
                     <img className="AnswerImages" src={props.image}/>

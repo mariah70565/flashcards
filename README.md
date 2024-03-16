@@ -1,26 +1,26 @@
-# Web Development Project 2 - flashcards
+# Web Development Project 3 - Flashcards
 
-Submitted by: Mariah Gonzales
+Submitted by: Mariah Gonzakes
 
-This web app: provides a set of 11 flashcards - 10 that are each displayed in a random order when a user clicks the "next arrow" button. The user is first shown a pre-flashcard that guides the user on how to use the program. Every flashcard shows the question side first. When the flashcard is clicked, the flashcard then shows the answer side. Each card corresponds to a Snoopy theme to test the knowledge of the user with fun facts about the PEANUTS character!
+This web app: provides a set of 10 flashcards that are each displayed one by one. When a user clicks the "next arrow" button, it changes to the next card, and when the user clicks the "previous arrow" button, it changes to the previous card. If a user click's the "Shuffle" button, it changes to a randomly selected card. Every flashcard shows the question side first, even if the arrows are clicked while the user is on the answer side of their current card. When the flashcard is clicked, the flashcard then shows the answer side. Below the flashcards is a place for a user to enter what they think the answer on the back of the card is. When the "submit" button is clicked, the textbox they entered in is highlighted red for an incorrect answer, and green for a correct answer. They are not allowed to check their answer if they are on the answer side of the card - they must be on the question side. Above the flashcards is also 2 streak counts. One shows their current streak, which increments for every answer they correctly guess in a row, and the other shows their record streak, which increments as their current streak beats their record streak. Each card corresponds to a Snoopy theme to test the knowledge of the user with fun facts about the PEANUTS character!
 
-Time spent: 12 hours spent in total
+Time spent: 10 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [x] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [x] **A list of card pairs is created**
-- [x] **Clicking on the card shows the corresponding component of the information pair**
-- [x] **Clicking the next button displays a random new card**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [x] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+- [x] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [x] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,17 +28,16 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
-
+Here's a walkthrough of implemented user stories:
 <div>
-    <a href="https://www.loom.com/share/87b39c7f9e324fdd984c7440ce524dcf">
+    <a href="https://www.loom.com/share/db2557a8a07e407a80ff8e4fdc288c45">
     </a>
-    <a href="https://www.loom.com/share/87b39c7f9e324fdd984c7440ce524dcf">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/87b39c7f9e324fdd984c7440ce524dcf-with-play.gif">
+    <a href="https://www.loom.com/share/db2557a8a07e407a80ff8e4fdc288c45">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/db2557a8a07e407a80ff8e4fdc288c45-with-play.gif">
     </a>
   </div>
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://cdn.loom.com/sessions/thumbnails/db2557a8a07e407a80ff8e4fdc288c45-with-play.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -50,8 +49,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-I was unable to figure out how to do a flip animation for my cards, so I decided to just change the animation such that the cards increase in size slighly when hovered over, and again when clicked on.
+I struggled a lot with figuring out the styling of the input section and the streak text. Everything keot clashing with each other because tehy are all a part of the Flashcard component.
 
 ## License
 
